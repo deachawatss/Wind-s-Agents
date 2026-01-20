@@ -1,6 +1,6 @@
-# OPENCODE_workflows.md - Short Codes & Context Management
+# CLAUDE_workflows.md - Short Codes & Context Management
 
-> **Navigation**: [Main](OPENCODE.md) | [Safety](OPENCODE_safety.md) | **Workflows** | [Subagents](OPENCODE_subagents.md) | [Lessons](OPENCODE_lessons.md) | [Templates](OPENCODE_templates.md)
+> **Navigation**: [Main](CLAUDE.md) | [Safety](CLAUDE_safety.md) | **Workflows** | [Subagents](CLAUDE_subagents.md) | [Lessons](CLAUDE_lessons.md) | [Templates](CLAUDE_templates.md)
 
 ---
 
@@ -18,7 +18,7 @@ Short codes trigger `/commands`. Details loaded only when called.
 
 **Core Pattern**: `ccc → nnn → gogogo → rrr`
 
-**Details**: See `.opencode/skills/[code]/` (loaded on demand)
+**Details**: See `.claude/skills/[code]/` (loaded on demand)
 
 ---
 
@@ -138,7 +138,7 @@ When running `rrr`:
 
 1. **Gather Data**: Get git log, file changes, session activity
 2. **Create Directory**: `ψ/memory/retrospectives/YYYY-MM/DD/`
-3. **Write Retrospective**: Use template from OPENCODE_templates.md
+3. **Write Retrospective**: Use template from CLAUDE_templates.md
 4. **Required Sections**:
    - AI Diary (min 150 words) - BE VULNERABLE
    - Honest Feedback (min 100 words)
@@ -194,4 +194,4 @@ Core Identity → Manual → ψ/memory/resonance/
 
 ---
 
-**See also**: [OPENCODE_templates.md](OPENCODE_templates.md) for retrospective template, [OPENCODE_safety.md](OPENCODE_safety.md) for PR workflow rules
+**See also**: [CLAUDE_templates.md](CLAUDE_templates.md) for retrospective template, [CLAUDE_safety.md](CLAUDE_safety.md) for PR workflow rules

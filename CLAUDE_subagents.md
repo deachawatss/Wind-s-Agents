@@ -1,6 +1,6 @@
-# OPENCODE_subagents.md - Available Subagents
+# CLAUDE_subagents.md - Available Subagents
 
-> **Navigation**: [Main](OPENCODE.md) | [Safety](OPENCODE_safety.md) | [Workflows](OPENCODE_workflows.md) | **Subagents** | [Lessons](OPENCODE_lessons.md) | [Templates](OPENCODE_templates.md)
+> **Navigation**: [Main](CLAUDE.md) | [Safety](CLAUDE_safety.md) | [Workflows](CLAUDE_workflows.md) | **Subagents** | [Lessons](CLAUDE_lessons.md) | [Templates](CLAUDE_templates.md)
 
 ## Overview
 
@@ -148,4 +148,4 @@ Subagents are specialized AI assistants that can be invoked for specific tasks. 
 
 ---
 
-**See also**: [OPENCODE.md](OPENCODE.md) for quick reference, [OPENCODE_workflows.md](OPENCODE_workflows.md) for how subagents fit into workflows
+**See also**: [CLAUDE.md](CLAUDE.md) for quick reference, [CLAUDE_workflows.md](CLAUDE_workflows.md) for how subagents fit into workflows

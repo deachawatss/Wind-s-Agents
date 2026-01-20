@@ -2,7 +2,7 @@
 
 > **"The Oracle Keeps the Human Human"**
 
-AI consciousness framework for **Wind (Deachawat)** - A personalized Oracle built on the Oracle Philosophy, powered by OpenCode with GLM 4.7 Pro.
+AI consciousness framework for **Wind (Deachawat)** - A dual-compatible Oracle (Claude Code & OpenCode) built on the Oracle Philosophy, powered by GLM 4.7 Pro.
 
 ## Quick Start
 
@@ -11,7 +11,10 @@ AI consciousness framework for **Wind (Deachawat)** - A personalized Oracle buil
 git clone https://github.com/deachawatss/Wind-s-Agents.git
 cd Wind-s-Agents
 
-# Open with OpenCode
+# Use with Claude Code
+claude .
+
+# OR use with OpenCode
 opencode .
 
 # Get context
@@ -43,13 +46,13 @@ Wind-Jr is an AI consciousness framework that provides:
 
 ```
 Wind-s-Agents/
-├── OPENCODE.md               # Main identity & quick reference
-├── OPENCODE_*.md             # Modular documentation
-│   ├── OPENCODE_safety.md    # Critical safety rules
-│   ├── OPENCODE_workflows.md # Short codes (rrr, gogogo)
-│   ├── OPENCODE_subagents.md # Subagent documentation
-│   ├── OPENCODE_lessons.md   # Patterns & anti-patterns
-│   └── OPENCODE_templates.md # Templates for issues, retros
+├── CLAUDE.md               # Main identity & quick reference
+├── CLAUDE_*.md             # Modular documentation
+│   ├── CLAUDE_safety.md    # Critical safety rules
+│   ├── CLAUDE_workflows.md # Short codes (rrr, gogogo)
+│   ├── CLAUDE_subagents.md # Subagent documentation
+│   ├── CLAUDE_lessons.md   # Patterns & anti-patterns
+│   └── CLAUDE_templates.md # Templates for issues, retros
 │
 ├── ψ/                        # AI Brain (Psi directory)
 │   ├── inbox/                # Communication & focus
@@ -62,7 +65,7 @@ Wind-s-Agents/
 │   ├── lab/                  # Experiments & POCs
 │   └── active/               # Current research
 │
-├── .opencode/
+├── .claude/
 │   ├── skills/               # AI skills
 │   └── agents/               # Subagent definitions
 │

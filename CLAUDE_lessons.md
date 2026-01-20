@@ -1,6 +1,6 @@
-# OPENCODE_lessons.md - Lessons Learned
+# CLAUDE_lessons.md - Lessons Learned
 
-> **Navigation**: [Main](OPENCODE.md) | [Safety](OPENCODE_safety.md) | [Workflows](OPENCODE_workflows.md) | [Subagents](OPENCODE_subagents.md) | **Lessons** | [Templates](OPENCODE_templates.md)
+> **Navigation**: [Main](CLAUDE.md) | [Safety](CLAUDE_safety.md) | [Workflows](CLAUDE_workflows.md) | [Subagents](CLAUDE_subagents.md) | **Lessons** | [Templates](CLAUDE_templates.md)
 
 *(This section should be continuously updated with project-specific findings)*
 
@@ -56,4 +56,4 @@
 
 ---
 
-**See also**: [OPENCODE.md](OPENCODE.md) for quick reference, [OPENCODE_workflows.md](OPENCODE_workflows.md) for workflow patterns
+**See also**: [CLAUDE.md](CLAUDE.md) for quick reference, [CLAUDE_workflows.md](CLAUDE_workflows.md) for workflow patterns

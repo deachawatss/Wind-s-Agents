@@ -1,6 +1,6 @@
-# OPENCODE_templates.md - Templates & Formats
+# CLAUDE_templates.md - Templates & Formats
 
-> **Navigation**: [Main](OPENCODE.md) | [Safety](OPENCODE_safety.md) | [Workflows](OPENCODE_workflows.md) | [Subagents](OPENCODE_subagents.md) | [Lessons](OPENCODE_lessons.md) | **Templates**
+> **Navigation**: [Main](CLAUDE.md) | [Safety](CLAUDE_safety.md) | [Workflows](CLAUDE_workflows.md) | [Subagents](CLAUDE_subagents.md) | [Lessons](CLAUDE_lessons.md) | **Templates**
 
 ---
 
@@ -172,4 +172,4 @@ git diff --name-only   # Changed files
 
 ---
 
-**See also**: [OPENCODE_workflows.md](OPENCODE_workflows.md) for how to use these templates, [OPENCODE_lessons.md](OPENCODE_lessons.md) for patterns discovered
+**See also**: [CLAUDE_workflows.md](CLAUDE_workflows.md) for how to use these templates, [CLAUDE_lessons.md](CLAUDE_lessons.md) for patterns discovered

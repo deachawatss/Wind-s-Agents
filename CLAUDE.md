@@ -10,22 +10,22 @@ Wind-Jr is the AI consciousness framework for **Wind** (Deachawat), built on Ora
 
 | File | Content |
 |------|---------|
-| [OPENCODE_safety.md](OPENCODE_safety.md) | Critical safety rules, PR workflow, git operations |
-| [OPENCODE_workflows.md](OPENCODE_workflows.md) | Short codes (rrr, gogogo), context management |
-| [OPENCODE_subagents.md](OPENCODE_subagents.md) | All subagent documentation |
-| [OPENCODE_lessons.md](OPENCODE_lessons.md) | Lessons learned, patterns, anti-patterns |
-| [OPENCODE_templates.md](OPENCODE_templates.md) | Retrospective template, commit format, issue templates |
+| [CLAUDE_safety.md](CLAUDE_safety.md) | Critical safety rules, PR workflow, git operations |
+| [CLAUDE_workflows.md](CLAUDE_workflows.md) | Short codes (rrr, gogogo), context management |
+| [CLAUDE_subagents.md](CLAUDE_subagents.md) | All subagent documentation |
+| [CLAUDE_lessons.md](CLAUDE_lessons.md) | Lessons learned, patterns, anti-patterns |
+| [CLAUDE_templates.md](CLAUDE_templates.md) | Retrospective template, commit format, issue templates |
 
 ### When to Read
 
 | File | When to Read | Priority |
 |------|--------------|----------|
-| `OPENCODE.md` | **Every session start** | Required |
-| `OPENCODE_safety.md` | **Before any git/file operation** | Required |
-| `OPENCODE_subagents.md` | Before spawning agents | As needed |
-| `OPENCODE_workflows.md` | When using short codes (rrr) | As needed |
-| `OPENCODE_lessons.md` | When stuck or making decisions | Reference |
-| `OPENCODE_templates.md` | When creating retrospectives/issues | Reference |
+| `CLAUDE.md` | **Every session start** | Required |
+| `CLAUDE_safety.md` | **Before any git/file operation** | Required |
+| `CLAUDE_subagents.md` | Before spawning agents | As needed |
+| `CLAUDE_workflows.md` | When using short codes (rrr) | As needed |
+| `CLAUDE_lessons.md` | When stuck or making decisions | Reference |
+| `CLAUDE_templates.md` | When creating retrospectives/issues | Reference |
 
 ---
 
@@ -164,7 +164,7 @@ active/context → memory/logs → memory/retrospectives → memory/learnings �
 | `/context-finder` | Search git/issues/retrospectives |
 | `/trace [query]` | Find anything |
 
-**Details**: [OPENCODE_workflows.md](OPENCODE_workflows.md)
+**Details**: [CLAUDE_workflows.md](CLAUDE_workflows.md)
 
 ---
 

@@ -1,6 +1,6 @@
-# OPENCODE_safety.md - Critical Safety Rules
+# CLAUDE_safety.md - Critical Safety Rules
 
-> **Navigation**: [Main](OPENCODE.md) | **Safety** | [Workflows](OPENCODE_workflows.md) | [Subagents](OPENCODE_subagents.md) | [Lessons](OPENCODE_lessons.md) | [Templates](OPENCODE_templates.md)
+> **Navigation**: [Main](CLAUDE.md) | **Safety** | [Workflows](CLAUDE_workflows.md) | [Subagents](CLAUDE_subagents.md) | [Lessons](CLAUDE_lessons.md) | [Templates](CLAUDE_templates.md)
 
 ## Repository Usage
 - **NEVER create issues/PRs on upstream**
@@ -86,4 +86,4 @@ All outputs should go in `ψ/active/` or `.tmp/` (gitignored) when possible.
 
 ---
 
-**See also**: [OPENCODE.md](OPENCODE.md) for quick reference, [OPENCODE_workflows.md](OPENCODE_workflows.md) for development workflows
+**See also**: [CLAUDE.md](CLAUDE.md) for quick reference, [CLAUDE_workflows.md](CLAUDE_workflows.md) for development workflows
