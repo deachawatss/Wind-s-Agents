@@ -6,7 +6,7 @@
 
 Subagents are specialized AI assistants that can be invoked for specific tasks. Each has a defined purpose, model, and output format.
 
-**Model**: All subagents use **GLM 4.7 Pro** in the OpenCode environment.
+**Model**: **Gemini 3 Flash** (google/gemini-3-flash-preview)
 
 **Delegation Rules**:
 1. **Context gathering**: Don't read files directly → use context-finder
@@ -19,7 +19,7 @@ Subagents are specialized AI assistants that can be invoked for specific tasks. 
 **Fast search through git history, retrospectives, issues, and codebase**
 
 - **Usage**: Task tool with subagent_type='explore'
-- **Model**: **GLM 4.7 Pro**
+- **Model**: **Gemini 3 Flash** (google/gemini-3-flash-preview)
 - **Modes**:
   - No args → DEFAULT MODE (tiered + scored output)
   - With query → SEARCH MODE
@@ -32,7 +32,7 @@ Subagents are specialized AI assistants that can be invoked for specific tasks. 
 **Create code files from GitHub issue specs**
 
 - **Usage**: Task tool with subagent_type='general' with prompt "Implement issue #X"
-- **Model**: **GLM 4.7 Pro**
+- **Model**: **Antigravity Claude Opus 4.5 Thinking** (google/antigravity-claude-opus-4-5-thinking)
 - **Behavior**: Writes files, follows repo patterns, documents decisions
 - **Use when**: Quality code implementation needed
 
@@ -42,7 +42,7 @@ Subagents are specialized AI assistants that can be invoked for specific tasks. 
 **Execute plans from GitHub issues (simple tasks)**
 
 - **Usage**: Task tool with subagent_type='general' with prompt "Execute issue #X"
-- **Model**: **GLM 4.7 Pro**
+- **Model**: **Gemini 3 Flash** (google/gemini-3-flash-preview)
 - **Behavior**: Reads bash blocks from issue, runs commands sequentially
 - **Safety**: Whitelist commands, blocks rm -rf/--force/sudo
 
@@ -52,7 +52,7 @@ Subagents are specialized AI assistants that can be invoked for specific tasks. 
 **Detect secrets, API keys, and sensitive data before commits**
 
 - **Usage**: Task tool with subagent_type='explore'
-- **Model**: **GLM 4.7 Pro**
+- **Model**: **Gemini 3 Flash** (google/gemini-3-flash-preview)
 - **PROACTIVE**: Use before any commit to public repo
 - **Detects**: API keys, passwords, private keys, IP addresses, personal data, full names
 - **Output**: Security Scan Report with SAFE TO COMMIT or BLOCK COMMIT
@@ -63,7 +63,7 @@ Subagents are specialized AI assistants that can be invoked for specific tasks. 
 **PROACTIVE repo health check - detects large files and data files before commits**
 
 - **Usage**: Task tool with subagent_type='explore'
-- **Model**: **GLM 4.7 Pro**
+- **Model**: **Gemini 3 Flash** (google/gemini-3-flash-preview)
 - **PROACTIVE**: Use before any commit, like security-scanner
 - **Checks**: File sizes (BLOCK >50MB), data files (.json >100KB, .csv, .db), staged files
 - **Thresholds**: <1MB ✅, 1-10MB ⚠️, 10-50MB ⚠️⚠️, >50MB 🚫
@@ -75,6 +75,7 @@ Subagents are specialized AI assistants that can be invoked for specific tasks. 
 **Lean file placement consultant - ASK BEFORE creating files!**
 
 - **Usage**: Task tool with subagent_type='general'
+- **Model**: **Gemini 3 Flash** (google/gemini-3-flash-preview)
 - **MUST consult before**: Creating any new file, especially in root
 - **Philosophy**: "Does this file spark joy? Does it have a home?"
 - **Output**: Verdict (APPROVED / REJECTED / REDIRECT) + recommended path
@@ -97,7 +98,7 @@ Subagents are specialized AI assistants that can be invoked for specific tasks. 
 **Track project lifecycle: 🌱 Seed → 🌕 Grow → 🎓 Grad | 📚 Learn**
 
 - **Usage**: Task tool with subagent_type='explore'
-- **Model**: **GLM 4.7 Pro**
+- **Model**: **Gemini 3 Flash** (google/gemini-3-flash-preview)
 - **Actions**:
   - `list` - Read projects/INDEX.md, return formatted table
   - `add [name] [phase] [location]` - Add new project to INDEX
@@ -113,7 +114,7 @@ Subagents are specialized AI assistants that can be invoked for specific tasks. 
 **จดโน้ต - feeling, info, idea จาก content type commands**
 
 - **Usage**: Task tool with subagent_type='general'
-- **Model**: **GLM 4.7 Pro**
+- **Model**: **Antigravity Claude Opus 4.5 Thinking** (google/antigravity-claude-opus-4-5-thinking)
 - **Input**: Content type + content + optional context
 - **Handles**:
   - `/feeling` → `ψ/memory/logs/feelings/`
@@ -127,14 +128,15 @@ Subagents are specialized AI assistants that can be invoked for specific tasks. 
 
 | Task Type | Model | Examples |
 |-----------|-------|----------|
-| Research/Search | GLM 4.7 Pro | context-finder, repo-auditor |
-| Quality Code | GLM 4.7 Pro | coder |
-| Fast Execution | GLM 4.7 Pro | executor, security-scanner |
-| Note-taking | GLM 4.7 Pro | note-taker |
-| Project Management | GLM 4.7 Pro | project-keeper |
-| Philosophy | GLM 4.7 Pro | oracle-keeper |
+| Research/Search | Gemini 3 Flash | context-finder, repo-auditor |
+| Quality Code | Antigravity Opus 4.5 | coder |
+| Fast Execution | Gemini 3 Flash | executor, security-scanner |
+| Note-taking | Antigravity Opus 4.5 | note-taker |
+| Project Management | Gemini 3 Flash | project-keeper |
 
-**Note**: In OpenCode environment, GLM 4.7 Pro is used as the unified model for all subagents, providing consistent high-quality results.
+**Strategy**:
+- Use **Gemini 3 Flash** for speed, large context, and low cost (search, audit, execution).
+- Use **Antigravity Opus 4.5** for high-quality reasoning, coding, and nuanced writing.
 
 ---
 

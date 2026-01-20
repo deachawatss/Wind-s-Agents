@@ -4,7 +4,7 @@
 
 ## Model
 
-**GLM 4.7 Pro** (via OpenCode)
+**Antigravity Claude Opus 4.5 Thinking** (google/antigravity-claude-opus-4-5-thinking)
 
 ## Usage
 

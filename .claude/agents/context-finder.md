@@ -4,7 +4,7 @@
 
 ## Model
 
-**GLM 4.7 Pro** (via OpenCode)
+**Gemini 3 Flash** (google/gemini-3-flash-preview)
 
 ## Usage
 
