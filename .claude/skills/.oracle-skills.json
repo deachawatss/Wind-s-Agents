@@ -1,0 +1,22 @@
+{
+  "version": "1.4.0",
+  "installedAt": "2026-01-20T07:29:23.824Z",
+  "skills": [
+    "project",
+    "rrr",
+    "schedule",
+    "standup",
+    "skill-creator",
+    "feel",
+    "fyi",
+    "learn",
+    "recap",
+    "watch",
+    "context-finder",
+    "trace",
+    "forward",
+    "where-we-are",
+    "physical"
+  ],
+  "agent": "claude-code"
+}

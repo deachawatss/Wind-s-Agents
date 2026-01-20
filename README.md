@@ -85,15 +85,27 @@ Wind-s-Agents/
 
 ## Subagents
 
-All subagents use **GLM 4.7 Pro** in the OpenCode environment:
+Wind-Jr uses **GLM 4.7 Pro** as the default model, with specialized assignments:
 
-| Agent | Purpose |
-|-------|---------|
-| **context-finder** | Search git/issues/retrospectives |
-| **coder** | Create code files with quality |
-| **executor** | Execute bash commands from issues |
-| **security-scanner** | Detect secrets before commits |
-| **repo-auditor** | Check file sizes before commits |
+| Agent | Purpose | Model |
+|-------|---------|-------|
+| **coder** | Quality Code | **Antigravity Claude Opus 4.5 Thinking** 🧠 |
+| **context-finder** | Search/Research | **Gemini 3 Flash** ⚡ |
+| **executor** | Execution | **Gemini 3 Flash** ⚡ |
+| **security-scanner** | Safety Checks | **Gemini 3 Flash** ⚡ |
+| **repo-auditor** | Health Checks | **Gemini 3 Flash** ⚡ |
+
+## Skills Installation
+
+Install Oracle Skills using Bun (works with both OpenCode and Claude Code):
+
+```bash
+# Install all skills locally (into .opencode/skills/)
+bunx --bun oracle-skills@github:Soul-Brews-Studio/oracle-skills-cli#v1.4.0 install -y
+
+# Install specific skills
+bunx --bun oracle-skills@github:Soul-Brews-Studio/oracle-skills-cli#v1.4.0 install -s trace -s rrr -y
+```
 
 ## Golden Rules
 
